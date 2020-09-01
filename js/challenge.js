@@ -16,13 +16,13 @@ let timerInterval = setInterval(function () {
 }, 1000);
 
 upButton.addEventListener("click", () => {
-    console.log("Worked")
+    console.log("Works")
     secondsLeft = parseInt(secondsLeft) + 1;
     timerElement.textContent = secondsLeft;
 });
 
 downButton.addEventListener("click", () => {
-    console.log("Worked")
+    console.log("Works")
     secondsLeft = parseInt(secondsLeft) - 1;
     timerElement.textContent = secondsLeft;
 });
@@ -50,7 +50,7 @@ pauseButton.addEventListener("click", () => {
 });
 
 likeButton.addEventListener("click", function() {
-    console.log("Worked")
+    console.log("Works)
     let likes = document.querySelector(".likes") 
     likeCount += 1;
     likes.innerText = likeCount
@@ -60,8 +60,8 @@ likeButton.addEventListener("click", function() {
 
 submitElement.addEventListener("click", function () {
     event.preventDefault();
-    console.log("Worked");
-    var response = "Wow, what a fun game this is.";
+    console.log("it's Working");
+    var response = "This is fun.";
     listComments.textContent = response;
 
 });
